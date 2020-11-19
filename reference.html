@@ -1,0 +1,70 @@
+<main>
+  <!-- MAIN PAGE SECTION TO START QUIZ-->
+  <div class="mainPage">
+    <h2>Start New Quiz</h2>
+    <p>
+      Quiz description: I love blockchain and want to have fun while raising awareness
+      can you answer some questions that can highlight the new uses of the decentralized technologies?
+    </p>
+    <button id="startQuiz">START QUIZ</button>
+  </div>
+
+  <hr />
+
+  <!-- QUESTION SECTION TEMPLATE -->
+  <div class="questionSection">
+    <h2>QUESTION HERE</h2>
+    <div class="quizStatusSection">
+      <div class="currentQuestion">
+        <p>You are currently on question NNN out of NNN</p>
+      </div>
+      <div class="currentScore">
+        <p>Your Current Score is NNN correct, NNN incorrect</p>
+      </div>
+    </div>
+    <form class="answerOptions">
+      <input type="radio" id="answer1" name="answer" value="one" />
+      <label for="one">ANSWER OPTION 1</label><br />
+
+      <input type="radio" id="answer2" name="answer" value="two" />
+      <label for="two">ANSWER OPTION 2</label><br />
+
+      <input type="radio" id="answer3" name="answer" value="three" />
+      <label for="three">ANSWER OPTION 3</label><br />
+
+      <input type="radio" id="answer4" name="answer" value="four" />
+      <label for="four">ANSWER OPTION 4</label><br />
+      <button id="submitAnswer" class="hideButton">SUBMIT ANSWER</button>
+    </form>
+  </div>
+
+  <hr />
+
+  <!-- FEEDBACK SECTION TEMPLATE for correct -->
+  <div class="feedbackSectionCorrect">
+    <h2>QUESTION Qnumberhere RESULT</h2>
+    <p>You were correct! The answer was XXXXXX</p>
+    <button id="nextQuestion">Continue the Chain</button>
+  </div>
+
+  <!-- FEEDBACK SECTION TEMPLATE for incorrect -->
+
+  <hr />
+
+  <div class="feedbackSectionIncorrect">
+    <h2>QUESTION Qnumberhere RESULT</h2>
+    <p>You were incorrect, sorry! The answer was XXXXXX</p>
+    <button id="nextQuestion">Continue The Chain</button>
+  </div>
+
+  <hr />
+
+  <!-- RESULTS SECTION TEMPLATE -->
+  <div class="resultsSection">
+    <h2>Well done, I hope you had fun!</h2>
+    <p>Here are your results:</p>
+    <p class="final-results">You got XXXX out of XXXXX questions correct.</p>
+    <p>Want to take it again? Click the button below to start a new quiz!</p>
+    <button id="newQuiz">Continue The Chain</button>
+  </div>
+</main>

@@ -1,0 +1,391 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+  color: #4c7f9d;
+}
+
+body {
+  background-color: #48639C;
+}
+
+h1 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* main section styling */
+
+.mainPage {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 12px;
+}
+
+#startQuiz {
+  margin: 20px 0px 10px 0px;
+}
+
+/* question section styling */
+
+.questionSection {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.questionSection h2 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.answerOptions {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #374196;
+}
+
+form label {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#submitAnswer {
+  margin: 20px 0px 10px 0px;
+  background-color: white;
+}
+
+.quizStatusSection {
+  border-radius: 10px;
+  margin: 10px 10px 20px 10px;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #05386b;
+}
+
+.currentQuestion {
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 15px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+.currentScore {
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 15px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* feedback section styling */
+
+.feedbackSectionCorrect {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.feedbackSectionIncorrect {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#nextQuestion {
+  margin: 10px 0px 10px 0px;
+}
+
+.wrong {
+  color: #4C4C9D;
+  font-size: 18px;
+}
+
+.right {
+  color: rgb(0, 19, 128);
+  font-size: 18px;
+}
+
+/* results page styling */
+
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 15px;
+}
+
+.finalPercentCorrect {
+  font-size: 40px;
+  border-radius: 10px;
+  background-color: #379683;
+  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.24);
+  padding: 0px 20px;
+}
+
+.finalPercentCorrect h3 {
+  color: white;
+}
+
+.final-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  margin: 20px 0px;
+  padding: 5px;
+  height: 100px;
+  font-size: 20px;
+}
+
+#newQuiz {
+  margin: 20px 0px 10px 0px;
+  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.24);
+}
+
+/*********** STYLES FOR LARGER SCREEN SIZES **********/
+
+@media all and (min-width: 768px) {
+  * {
+    font-family: 'Times New Roman', Times, serif;
+    color: #1e1e1f;
+  }
+
+  body {
+    background-color: #5c69db;
+  }
+
+  h1 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    font-size: 40px;
+  }
+
+  /* main section styling */
+
+  .mainPage {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6b3b3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .mainPage h2 {
+    font-size: 30px;
+  }
+
+  #startQuiz {
+    margin: 20px 0px 10px 0px;
+  }
+
+  /* question section styling */
+
+  .questionSection {
+    background-color: #EAF9D9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .questionSection h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .answerOptions {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #3d0029;
+  }
+
+  form label {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  #submitAnswer {
+    margin: 20px 0px 10px 0px;
+    background-color: white;
+    font-size: 20px;
+  }
+
+  .quizStatusSection {
+    border-radius: 10px;
+    margin: 10px 10px 20px 10px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #6d006d;
+  }
+
+  .currentQuestion {
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .currentScore {
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* feedback section styling */
+
+  .feedbackSectionCorrect {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .feedbackSectionIncorrect {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #nextQuestion {
+    margin: 20px 0px 10px 0px;
+  }
+
+  .wrong {
+    color: rgb(196, 0, 0);
+    font-size: 30px;
+  }
+
+  .right {
+    color: green;
+    font-size: 30px;
+  }
+
+  /* results page styling */
+
+  .resultsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .finalPercentCorrect {
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: #379683;
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.24);
+    padding: 0px 20px;
+  }
+
+  .finalPercentCorrect h3 {
+    color: white;
+  }
+
+  .final-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 5px;
+    height: 100px;
+    font-size: 30px;
+  }
+
+  #newQuiz {
+    margin: 20px 0px 10px 0px;
+    padding: 10px;
+  }
+}
